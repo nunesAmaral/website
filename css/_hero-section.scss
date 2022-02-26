@@ -1,0 +1,94 @@
+#hero {
+  height: calc(100vh + 3rem);
+  background: $clPseudo;
+  position: relative;
+  z-index: 1;
+  &::before {
+    content: '';
+    position: absolute;
+    background: $clGlass;
+    top: 0;
+    left: 0;
+    height:  calc(100vh + 3rem);
+    width: 100%;
+    z-index: -1;
+  }
+  header {
+    font-family: 'Space Mono', monospace;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding-top: 2rem;
+    border-bottom: 1px solid $clWhite;
+    padding-bottom: 1rem;
+    .logo {
+      font-size: 2rem;
+      color: $clWhite;
+    }
+    ul {
+      display: flex;
+      font-size: 1.125rem;
+      li {
+        margin-right: 2rem;
+      }
+      a {
+        text-decoration: none;
+        color: $clWhite;
+      }
+
+      li:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  .text-block {
+    max-width: 57.5rem;
+    margin: 16vh auto 0 auto;
+    color: $clWhite;
+    position: relative;
+    h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      font-size: 4rem;
+      line-height: 110%;
+      text-transform: uppercase;
+    }
+    span {
+      display: block;
+      font-family: 'Space Mono', monospace;
+      font-size: 1.25rem;
+      line-height: 160%;
+      max-width: 51rem;
+      margin-top: 1.5rem;
+      position: relative;
+      left:  calc(5.25rem + 1.5rem);
+      &::before {
+        content: '';
+        width: 5.25rem;
+        height: 1.4px;
+        position: relative;
+        display: block;
+        background-color: $clWhite;
+        left: calc(-5.25rem + -1.5rem);
+        top: 3rem    
+      }
+    }
+    .btn {
+      position: absolute;
+      right: 0;
+      margin-top: 2rem;
+    }
+  }
+}
+
+// @keyframes animeBg {
+//   from {
+//     background-size: auto 200vw;
+//   }
+
+//   to {
+//     background-size: auto;
+//   }
+// }

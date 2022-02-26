@@ -1,0 +1,36 @@
+/*Colours*/
+
+$clWhite: #F3F3ED;
+$clLink: #33639C;
+$clDark: #19191C;
+$clAccent: linear-gradient(
+  87.39deg,
+  #e3b342 2.18%,
+  #ffcc33 53.4%,
+  #f0e437 100%
+);
+
+$clBlack: linear-gradient(
+  70.38deg,
+  rgba(10, 10, 10, 0.94) 0.64%,
+  rgba(9, 9, 9, 0.94) 0.65%,
+  rgba(4, 4, 4, 0.8836) 99.36%
+);
+
+$clPseudo: linear-gradient(
+  72.44deg,
+  #395671 0%, 
+  #8980bb 44.27%, 
+  #457ec0 100%
+);
+
+$clGlass: linear-gradient(
+  70.38deg,
+  rgba(30, 30, 30, 0.7056) 0.64%,
+  rgba(30, 30, 30, 0.6384) 21.2%,
+  rgba(30, 30, 30, 0.4032) 99.36%
+);
+
+
+//Sizes
+$container-width: 1180px;

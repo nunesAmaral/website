@@ -1,0 +1,43 @@
+h2 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 120%;
+  text-transform: uppercase;
+} 
+
+.btn {
+  background: $clAccent;
+  color: $clDark;
+  display: block;
+  padding: 1rem;
+  border: none;
+  font-family: 'Space Mono', monospace;
+  font-size: 1.125;
+  text-transform: uppercase;
+  border-radius: .5rem;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.18);
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+P {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 160%;
+  max-width: 25rem;
+}
+
+.link {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
+  color: $clLink;
+}

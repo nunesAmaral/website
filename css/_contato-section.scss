@@ -1,0 +1,66 @@
+#contato {
+  background: $clPseudo;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding:  3rem calc((100% - 1180px)/2);
+  color: $clWhite;
+  position: relative;
+  z-index: 1;
+  &::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: $clBlack;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+  }
+  .flex {
+    display: flex;
+    margin-top: 3rem;
+    justify-content: space-between;
+    max-width: 42rem;
+    margin-left: 5.25rem;
+    
+    div:first-of-type span {
+      display: block;
+      text-align: right;
+      margin-bottom: .5rem;
+    }
+    div:first-of-type span:first-of-type {
+      font-size: 1.125rem;
+      font-weight: 500;
+    }
+  }
+  input {
+    display: block;
+  }
+  input:not([type="submit"]), textarea {
+    display: block;
+    background: #18181E;
+    border-radius: 4px;
+    width: 25rem;
+    border: none;
+    color: $clWhite;
+  }
+  input:not([type="submit"]) {
+    height: 3rem;
+  }
+  
+  textarea {
+    height: 8rem;
+  }
+  .btn {
+    margin-top: 1.5rem;
+  }
+
+  label {
+    display: block;
+    padding-bottom: .5rem;
+    padding-top: 1rem;
+  }
+  label:first-of-type {
+    padding-top: 0;
+  }
+}
