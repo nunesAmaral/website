@@ -1,14 +1,14 @@
 #sobre {
   background-color: $clWhite;
-  padding: 3rem calc((100% - var(--container-size))/2);
+  padding: 3rem calc((100% - var(--container-size)) / 2);
   margin: 0 auto;
   h2 {
     max-width: 28rem;
   }
   .container {
-    @media (max-width: 1080px){
-      flex-direction: column;  
-      max-width: 60rem; 
+    @media (max-width: 1080px) {
+      flex-direction: column;
+      max-width: 60rem;
       margin: 0 auto;
       padding: 3rem;
     }
@@ -16,27 +16,42 @@
   div.flex {
     display: flex;
     justify-content: space-between;
-    margin-top: 1.5rem; 
-    @media (max-width: 1080px){
+    margin-top: 1.5rem;
+    @media (max-width: 1080px) {
       flex-direction: column;
       p {
         max-width: 32.5rem;
-      }      
+      }
     }
-    div.column-1 {
+    .column-1 {
       margin-left: 5.25rem;
+      @media (max-width: 445px) {
+        margin-left: 0;
+      }
     }
     .link {
       margin-top: 1.5rem;
       display: block;
     }
     .column-2 {
-      @media (max-width: 1080px){
+      @media (max-width: 1080px) {
         margin-top: 2.5rem;
         display: flex;
-        margin-left: 5.25rem; 
+        margin-left: 5.25rem;
         .skills-list {
           margin-left: 2rem;
+        }
+
+        @media (max-width: 692px) {
+          display: flex;
+          flex-direction: column;
+          .skills-list {
+            margin-left: 0;
+            margin-top: 2rem;
+          }
+        }
+        @media (max-width: 445px) {
+          margin-left: 0;
         }
       }
     }
@@ -48,8 +63,8 @@
     }
     h4 {
       margin-top: 2rem;
-      @media (max-width: 1080px){
-        margin-top: 0; 
+      @media (max-width: 1080px) {
+        margin-top: 0;
       }
       color: $clDark;
       font-family: 'Space Mono', monospace;
@@ -58,13 +73,13 @@
     }
     ul {
       margin-top: 1rem;
-      
+
       list-style-image: url(../assets/retangle-list.svg);
       list-style-position: inside;
       li {
         font-family: 'Space Mono', monospace;
         font-size: 1rem;
-        margin-bottom: .75rem;
+        margin-bottom: 0.75rem;
       }
     }
   }

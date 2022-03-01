@@ -3,9 +3,7 @@
   @media (max-width: 1300px){
     --container-size: 980px;
   }
-  // @media (max-width: 1080px){
-  //   --container-size: 790px;
-  // }
+ 
 }
 
 html {
@@ -21,6 +19,9 @@ h2 {
   font-size: 3rem;
   line-height: 120%;
   text-transform: uppercase;
+  @media (max-width: 810px){
+    font-size: 2.5rem;
+  }
 } 
 
 .btn {

@@ -2,6 +2,9 @@ footer {
   & > .flex {
     display: flex;
     background-color: $clWhite;
+    @media (max-width: 692px){
+      flex-direction: column;
+    }
     .logo {
       flex-grow: 0;
     }
@@ -10,14 +13,29 @@ footer {
       display: flex;
       padding: 2rem;
       justify-content: space-around;
+      @media (max-width: 492px){
+        flex-direction: column;
+        margin-left: 1rem;
+      }
     }
    .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       background: $clAccent;
       padding: 2rem;
       font-family: 'Space Mono', monospace;
       font-size: 2.5rem;
       font-weight: bold;
       border-right: 2px solid $clDark;
+      @media (max-width: 800px){
+        font-size: 2rem;
+      }
+      @media (max-width: 692px){
+        border-top: 2px solid $clDark;
+        border-bottom: 2px solid $clDark;
+        border-right: none;
+      }
     }
     .nav-list {
       ul {
@@ -32,6 +50,9 @@ footer {
       }
     }
     .contato-block {
+      @media (max-width: 692px){
+        margin-top: 1.5rem;
+      }
       span {
         margin-bottom: .5rem;
       }

@@ -1,7 +1,10 @@
 #hero {
   padding: 0 3rem;
   padding-bottom: 3rem;
-  height: 100%;
+  height: 100vh;
+  @media (max-width: 1080px) {
+    height: 100%;
+  }
   background: $clPseudo;
   position: relative;
   z-index: 1;
@@ -21,6 +24,9 @@
     align-items: center;
     justify-content: space-between;
     max-width: 90%;
+    @media (max-width: 1080px) {
+      max-width: 57.5rem;
+    }
     margin: 0 auto;
     padding-top: 2rem;
     border-bottom: 1px solid $clWhite;
@@ -44,6 +50,19 @@
         margin-right: 0;
       }
     }
+    #btn-menu {
+      display: none;
+    }
+    @media (max-width: 800px){
+      ul {
+        display: none;
+      }
+      #btn-menu {
+        display: block;
+        cursor: pointer;
+      }
+      
+    }
   }
   .text-block {
     max-width: 57.5rem;
@@ -54,11 +73,20 @@
       font-family: 'Montserrat', sans-serif;
       font-weight: 600;
       font-size: 4rem;
-      line-height: 110%;
+      line-height: 120%;
       text-transform: uppercase;
       @media (max-width: 1080px) {
         font-size: 3.5rem;
         max-width: 100%;
+      }
+      @media (max-width: 734px){
+        font-size: 3.2rem;  
+      }
+      @media (max-width: 692px){
+        font-size: 3.0rem;
+      }
+      @media (max-width: 445px){
+        font-size: 2.7rem;
       }
     }
     span {
@@ -72,6 +100,9 @@
       left:  calc(5.25rem + 1.5rem);
       @media (max-width: 1080px) {
         left: 0;
+      }
+      @media (max-width: 800px){
+        font-size: 1.125rem;
       }
       &::before {
         content: '';
@@ -100,13 +131,3 @@
     }
   }
 }
-
-// @keyframes animeBg {
-//   from {
-//     background-size: auto 200vw;
-//   }
-
-//   to {
-//     background-size: auto;
-//   }
-// }

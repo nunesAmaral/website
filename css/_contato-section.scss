@@ -29,16 +29,31 @@
     justify-content: space-between;
     max-width: 42rem;
     margin-left: 5.25rem;
-    
+    @media (max-width: 800px){
+      flex-direction: column;
+      margin-left: 0px;
+    }
+    .contato-info {
+      min-width: 13.75rem;
+      @media (max-width: 800px){
+        margin-bottom: 2rem;
+      }
+    }
     div:first-of-type span {
       display: block;
       text-align: right;
+      @media (max-width: 800px){
+        text-align: left;
+      }
       margin-bottom: .5rem;
     }
     div:first-of-type span:first-of-type {
       font-size: 1.125rem;
       font-weight: 500;
     }
+  }
+  form {
+    display: block;
   }
   input {
     display: block;
@@ -48,6 +63,12 @@
     background: #18181E;
     border-radius: 4px;
     width: 25rem;
+    @media (max-width: 692px){
+      width: 20rem;
+    }
+    @media (max-width: 492px){
+      width: 15rem;
+    }
     border: none;
     color: $clWhite;
   }

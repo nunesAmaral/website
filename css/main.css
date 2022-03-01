@@ -389,6 +389,12 @@ h2 {
   text-transform: uppercase;
 }
 
+@media (max-width: 810px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+}
+
 .btn {
   background: linear-gradient(87.39deg, #e3b342 2.18%, #ffcc33 53.4%, #f0e437 100%);
   color: #19191C;
@@ -428,10 +434,16 @@ P {
 #hero {
   padding: 0 3rem;
   padding-bottom: 3rem;
-  height: 100%;
+  height: 100vh;
   background: linear-gradient(72.44deg, #395671 0%, #8980bb 44.27%, #457ec0 100%);
   position: relative;
   z-index: 1;
+}
+
+@media (max-width: 1080px) {
+  #hero {
+    height: 100%;
+  }
 }
 
 #hero::before {
@@ -463,6 +475,12 @@ P {
   padding-bottom: 1rem;
 }
 
+@media (max-width: 1080px) {
+  #hero header {
+    max-width: 57.5rem;
+  }
+}
+
 #hero header .logo {
   font-size: 2rem;
   color: #F3F3ED;
@@ -488,6 +506,20 @@ P {
   margin-right: 0;
 }
 
+#hero header #btn-menu {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  #hero header ul {
+    display: none;
+  }
+  #hero header #btn-menu {
+    display: block;
+    cursor: pointer;
+  }
+}
+
 #hero .text-block {
   max-width: 57.5rem;
   margin: 16vh auto 0 auto;
@@ -499,7 +531,7 @@ P {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-size: 4rem;
-  line-height: 110%;
+  line-height: 120%;
   text-transform: uppercase;
 }
 
@@ -507,6 +539,24 @@ P {
   #hero .text-block h1 {
     font-size: 3.5rem;
     max-width: 100%;
+  }
+}
+
+@media (max-width: 734px) {
+  #hero .text-block h1 {
+    font-size: 3.2rem;
+  }
+}
+
+@media (max-width: 692px) {
+  #hero .text-block h1 {
+    font-size: 3.0rem;
+  }
+}
+
+@media (max-width: 445px) {
+  #hero .text-block h1 {
+    font-size: 2.7rem;
   }
 }
 
@@ -524,6 +574,12 @@ P {
 @media (max-width: 1080px) {
   #hero .text-block span {
     left: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  #hero .text-block span {
+    font-size: 1.125rem;
   }
 }
 
@@ -561,7 +617,7 @@ P {
 
 #sobre {
   background-color: #F3F3ED;
-  padding: 3rem calc((100% - var(--container-size))/2);
+  padding: 3rem calc((100% - var(--container-size)) / 2);
   margin: 0 auto;
 }
 
@@ -603,8 +659,14 @@ P {
   }
 }
 
-#sobre div.flex div.column-1 {
+#sobre div.flex .column-1 {
   margin-left: 5.25rem;
+}
+
+@media (max-width: 445px) {
+  #sobre div.flex .column-1 {
+    margin-left: 0;
+  }
 }
 
 #sobre div.flex .link {
@@ -622,6 +684,28 @@ P {
   }
   #sobre div.flex .column-2 .skills-list {
     margin-left: 2rem;
+  }
+}
+
+@media (max-width: 1080px) and (max-width: 692px) {
+  #sobre div.flex .column-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #sobre div.flex .column-2 .skills-list {
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 1080px) and (max-width: 445px) {
+  #sobre div.flex .column-2 {
+    margin-left: 0;
   }
 }
 
@@ -655,7 +739,7 @@ P {
 #sobre div.flex ul li {
   font-family: 'Space Mono', monospace;
   font-size: 1rem;
-  margin-bottom: .75rem;
+  margin-bottom: 0.75rem;
 }
 
 #servicos {
@@ -763,15 +847,45 @@ P {
   margin-left: 5.25rem;
 }
 
+@media (max-width: 800px) {
+  #contato .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 0px;
+  }
+}
+
+#contato .flex .contato-info {
+  min-width: 13.75rem;
+}
+
+@media (max-width: 800px) {
+  #contato .flex .contato-info {
+    margin-bottom: 2rem;
+  }
+}
+
 #contato .flex div:first-of-type span {
   display: block;
   text-align: right;
   margin-bottom: .5rem;
 }
 
+@media (max-width: 800px) {
+  #contato .flex div:first-of-type span {
+    text-align: left;
+  }
+}
+
 #contato .flex div:first-of-type span:first-of-type {
   font-size: 1.125rem;
   font-weight: 500;
+}
+
+#contato form {
+  display: block;
 }
 
 #contato input {
@@ -785,6 +899,18 @@ P {
   width: 25rem;
   border: none;
   color: #F3F3ED;
+}
+
+@media (max-width: 692px) {
+  #contato input:not([type="submit"]), #contato textarea {
+    width: 20rem;
+  }
+}
+
+@media (max-width: 492px) {
+  #contato input:not([type="submit"]), #contato textarea {
+    width: 15rem;
+  }
 }
 
 #contato input:not([type="submit"]) {
@@ -830,6 +956,7 @@ P {
 #faq .faq-list dt {
   cursor: pointer;
   font-size: 1.125rem;
+  line-height: 125%;
   max-width: 42rem;
   border-bottom: 2px solid #19191C;
   padding: 1.5rem 0 1rem 0;
@@ -885,6 +1012,13 @@ P {
   font-size: 1.25rem;
 }
 
+@media (max-width: 1080px) {
+  #quote blockquote {
+    font-size: 1.125rem;
+    max-width: 60%;
+  }
+}
+
 #quote cite {
   display: block;
   margin-top: 2rem;
@@ -897,6 +1031,15 @@ footer > .flex {
   display: -ms-flexbox;
   display: flex;
   background-color: #F3F3ED;
+}
+
+@media (max-width: 692px) {
+  footer > .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 footer > .flex .logo {
@@ -917,13 +1060,46 @@ footer > .flex .subflex {
       justify-content: space-around;
 }
 
+@media (max-width: 492px) {
+  footer > .flex .subflex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 1rem;
+  }
+}
+
 footer > .flex .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: linear-gradient(87.39deg, #e3b342 2.18%, #ffcc33 53.4%, #f0e437 100%);
   padding: 2rem;
   font-family: 'Space Mono', monospace;
   font-size: 2.5rem;
   font-weight: bold;
   border-right: 2px solid #19191C;
+}
+
+@media (max-width: 800px) {
+  footer > .flex .logo {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 692px) {
+  footer > .flex .logo {
+    border-top: 2px solid #19191C;
+    border-bottom: 2px solid #19191C;
+    border-right: none;
+  }
 }
 
 footer > .flex .nav-list ul {
@@ -937,6 +1113,12 @@ footer > .flex .nav-list li {
 footer > .flex .nav-list a {
   text-decoration: none;
   color: #19191C;
+}
+
+@media (max-width: 692px) {
+  footer > .flex .contato-block {
+    margin-top: 1.5rem;
+  }
 }
 
 footer > .flex .contato-block span {
