@@ -1,6 +1,13 @@
 #faq {
-  padding:  3rem calc((100% - 1180px)/2);
+  padding:  3rem calc((100% - var(--container-size))/2);
   background-color: $clWhite;
+  .container {
+    @media (max-width: 1080px) {
+      max-width: 60rem;
+      padding: 3rem;
+      margin: 0 auto;
+    }
+  }
   .faq-list {
     margin-top: 2.5rem;
     font-family: 'Space Mono', monospace;

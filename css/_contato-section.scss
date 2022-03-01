@@ -1,8 +1,8 @@
 #contato {
   background: $clPseudo;
-  max-width: 1180px;
+  max-width: var(--container-size);
   margin: 0 auto;
-  padding:  3rem calc((100% - 1180px)/2);
+  padding:  3rem calc((100% - var(--container-size))/2);
   color: $clWhite;
   position: relative;
   z-index: 1;
@@ -15,6 +15,13 @@
     left: 0;
     top: 0;
     z-index: -1;
+  }
+  .container {
+    @media (max-width: 1080px) {
+      max-width: 60rem;
+      margin: 0 auto;
+      padding: 3rem;
+    }
   }
   .flex {
     display: flex;

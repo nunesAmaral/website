@@ -1,0 +1,16 @@
+// :root {
+//   @mixin laptop {
+//     --container-size: 980px;
+//   }
+// }
+// html {
+//   @mixin laptop {
+//     font-size: 15px;
+//   }
+// }
+
+// @mixin laptop {
+//   @media (max-width: 1300px){
+//     @content
+//   }
+// }

@@ -1,3 +1,19 @@
+:root {
+  --container-size: 1180px;
+  @media (max-width: 1300px){
+    --container-size: 980px;
+  }
+  // @media (max-width: 1080px){
+  //   --container-size: 790px;
+  // }
+}
+
+html {
+  @media (max-width: 1080px){
+    font-size: 15px;
+  }
+}
+
 h2 {
   font-family: Montserrat;
   font-style: normal;
@@ -31,6 +47,9 @@ P {
   font-size: 1rem;
   line-height: 160%;
   max-width: 25rem;
+  // @include laptop {
+  //   max-width: 31,25%;
+  // }
 }
 
 .link {

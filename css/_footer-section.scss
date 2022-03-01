@@ -51,9 +51,9 @@ footer {
   .copy {
     background: $clPseudo;
     font-family: 'Space Mono', monospace;
-    max-width: 1180px;
+    max-width: var(--container-size);
     margin: 0 auto;
-    padding:  1.5rem calc((100% - 1180px)/2);
+    padding:  1.5rem calc((100% - var(--container-size))/2);
     color: $clWhite;
     text-align: center;
     position: relative;

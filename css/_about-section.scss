@@ -1,14 +1,28 @@
 #sobre {
   background-color: $clWhite;
-  padding: 3rem 7.5rem;
+  padding: 3rem calc((100% - var(--container-size))/2);
+  margin: 0 auto;
   h2 {
     max-width: 28rem;
+  }
+  .container {
+    @media (max-width: 1080px){
+      flex-direction: column;  
+      max-width: 60rem; 
+      margin: 0 auto;
+      padding: 3rem;
+    }
   }
   div.flex {
     display: flex;
     justify-content: space-between;
-    max-width: 60rem;
-    margin-top: 1.5rem;
+    margin-top: 1.5rem; 
+    @media (max-width: 1080px){
+      flex-direction: column;
+      p {
+        max-width: 32.5rem;
+      }      
+    }
     div.column-1 {
       margin-left: 5.25rem;
     }
@@ -16,7 +30,17 @@
       margin-top: 1.5rem;
       display: block;
     }
-    div:last-child div {
+    .column-2 {
+      @media (max-width: 1080px){
+        margin-top: 2.5rem;
+        display: flex;
+        margin-left: 5.25rem; 
+        .skills-list {
+          margin-left: 2rem;
+        }
+      }
+    }
+    .column-2 .img-block {
       background-color: #c4c4c4;
       height: 17rem;
       width: 13.25rem;
@@ -24,6 +48,9 @@
     }
     h4 {
       margin-top: 2rem;
+      @media (max-width: 1080px){
+        margin-top: 0; 
+      }
       color: $clDark;
       font-family: 'Space Mono', monospace;
       font-weight: bold;
@@ -31,6 +58,7 @@
     }
     ul {
       margin-top: 1rem;
+      
       list-style-image: url(../assets/retangle-list.svg);
       list-style-position: inside;
       li {
