@@ -435,9 +435,19 @@ P {
   padding: 0 3rem;
   padding-bottom: 3rem;
   height: 100vh;
-  background: linear-gradient(72.44deg, #395671 0%, #8980bb 44.27%, #457ec0 100%);
   position: relative;
   z-index: 1;
+}
+
+#hero video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -2;
 }
 
 @media (max-width: 1080px) {
@@ -449,7 +459,9 @@ P {
 #hero::before {
   content: '';
   position: absolute;
-  background: linear-gradient(70.38deg, rgba(30, 30, 30, 0.7056) 0.64%, rgba(30, 30, 30, 0.6384) 21.2%, rgba(30, 30, 30, 0.4032) 99.36%);
+  background: linear-gradient(70.38deg, rgba(23, 12, 32, 0.5544) 0.64%, rgba(18, 12, 56, 0.42) 21.2%, rgba(15, 11, 41, 0.252) 99.36%);
+  -webkit-backdrop-filter: blur(24px);
+          backdrop-filter: blur(24px);
   top: 0;
   left: 0;
   height: 100%;
@@ -510,13 +522,53 @@ P {
   display: none;
 }
 
+#hero header ul.active {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  z-index: 7;
+  background: linear-gradient(72.44deg, #395671 0%, #8980bb 44.27%, #457ec0 100%);
+  overflow-y: hidden;
+  padding-top: 20vh;
+  display: block;
+}
+
+#hero header ul.active::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(70.38deg, rgba(10, 10, 10, 0.94) 0.64%, rgba(9, 9, 9, 0.94) 0.65%, rgba(4, 4, 4, 0.8836) 99.36%);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+#hero header ul.active li {
+  margin-right: 0;
+  font-size: 1.5rem;
+  text-align: center;
+  padding-top: 1.5rem;
+  padding-bottom: .5rem;
+  border-bottom: 2px solid #F3F3ED;
+  max-width: 84%;
+  margin: 0 auto;
+}
+
 @media (max-width: 800px) {
   #hero header ul {
     display: none;
   }
   #hero header #btn-menu {
     display: block;
+    z-index: 10;
     cursor: pointer;
+    position: relative;
+  }
+  #hero header #btn-menu img {
+    display: block;
   }
 }
 

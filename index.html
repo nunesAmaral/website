@@ -13,156 +13,167 @@
 </head>
 
 <body>
-  <section id="hero">
-    <header>
-      <span class="logo">logo</span>
-      <nav>
-        <ul>
-          <li><a href="#">sobre</a></li>
-          <li><a href="#">serviços</a></li>
-          <li><a href="#">contato</a></li>
-          <li><a href="#">faq</a></li>
-        </ul>
-        <div id="btn-menu">
-          <img src="assets/hamburguer.svg" alt="menu">
+  <!-- <div class="video-container">
+    <video class="video-bg"autoplay muted loop>
+      <source src="assets/bg-video.mp4">
+    </video>
+  </div> -->
+  <main>
+    <section id="hero">
+      <header>
+        <span class="logo">Nunez.</span>
+        <nav>
+          <ul>
+            <li><a href="#">sobre</a></li>
+            <li><a href="#">serviços</a></li>
+            <li><a href="#">contato</a></li>
+            <li><a href="#">faq</a></li>
+          </ul>
+          <div id="btn-menu">
+            <img src="assets/hamburguer.svg" alt="menu">
+          </div>
+        </nav>
+      </header>
+
+      <video class="video-bg"autoplay muted loop>
+        <source src="assets/bg-video.mp4">
+      </video>
+      <div class="text-block">
+        <h1>mais que UM serviço, UMA experiênciA digitaL.</h1>
+        <span>O desenvolvimento de páginas web é, em sua essência, entender as necessidades do cliente, utilizar do design para aprimorar a comunicação com o usuário e codificar da maneira mais otimizada.</span>
+        <button class="btn">Entre em contato <img src="assets/plane.svg" alt="Entre em contato"></button>
+      </div>
+    </section>
+    <section id="sobre">
+      <div class="container">
+        <h2>Um pouco mais sobre</h2>
+        <div class="flex">
+          <div class="column-1">
+            <p>
+              Me chamo Vitor e estou há mais de dois anos submerso na área do desenvolvimento de software frontend. Nesses dois anos desenvolvi minhas habilidades em UI design, HTML, CSS e JavaScript. Meu objetivo agora é colocar todos os meus conhecimentos em prática para ajudar você a ter uma presença on-line consistente e que se destaque dos demais concorrentes.
+            </p>
+            <a class="link" href="#">Entre em contato...</a>
+          </div>
+          <div class="column-2">
+            <div class="img-block">
+              <img src="" alt="">
+            </div>
+            <div class="skills-list">
+              <h4>Skills</h4>
+              <ul>
+                <li>Desenvolvimento frontend</li>
+                <li>UI Design</li>
+                <li>Vue JS</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </nav>
-    </header>
-    <div class="text-block">
-      <h1>mais que UM serviço, UMA experiênciA digitaL.</h1>
-      <span>O desenvolvimento de páginas web é, em sua essência, entender as necessidades do cliente, utilizar do design para aprimorar a comunicação com o usuário e codificar da maneira mais otimizada.</span>
-      <button class="btn">Entre em contato <img src="assets/plane.svg" alt="Entre em contato"></button>
-    </div>
-  </section>
-  <section id="sobre">
-    <div class="container">
-      <h2>Um pouco mais sobre</h2>
+  
+      </div>
+    </section>
+  
+    <section id="servicos">
       <div class="flex">
-        <div class="column-1">
-          <p>
-            Me chamo Vitor e estou há mais de dois anos submerso na área do desenvolvimento de software frontend. Nesses dois anos desenvolvi minhas habilidades em UI design, HTML, CSS e JavaScript. Meu objetivo agora é colocar todos os meus conhecimentos em prática para ajudar você a ter uma presença on-line consistente e que se destaque dos demais concorrentes.
-          </p>
-          <a class="link" href="#">Entre em contato...</a>
+        <div>
+          <h2>DE QUAL MANEIRA VOCÊ QUER SER AJUDADO?</h2>
         </div>
         <div class="column-2">
-          <div class="img-block">
-            <img src="" alt="">
+          <h3>Entre código, interface e usuário...</h3>
+          <p>
+            Para o desenvolvimento de uma página web que esteja de acordo com as necessidades do cliente, é necessário manter um constante feedback com o desenvolvedor. É por essa questão que em meu processo de desenvolvimento divido em 5 etapas onde em cada uma busco constantemente a validação do cliente para um desenvolvimento eficiente e alinhado às expectativas.
+          </p>
+        </div>
+        <!-- imagens da logo das principais stacks vão aqui -->
+      </div>
+      
+    </section>
+  
+    <section id="contato">
+      <div class="container">
+        <h2>Fale comigo!</h2>
+        <div class="flex">
+          <div class="contato-info">
+            <span>Entre em contato por:</span>
+            <span>email: contato@email.com</span>
+            <span>Celular: (48) 9 99861-8289</span>
+            <span>Telegram: creativi_digital</span>
           </div>
-          <div class="skills-list">
-            <h4>Skills</h4>
+          <div>
+            <form action="">
+              <label for="numero">Número:</label>
+              <input type="text" name="numero">
+    
+              <label for="E-mail">E-mail:</label>
+              <input type="text" name="email">
+    
+              <label for="mensagem">Mensagem:</label>
+              <textarea name="mensagem"></textarea>
+              <input class="btn" type="submit" value="enviar">
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="faq">
+      <div class="container">
+        <h2>Dúvidas frequentes</h2>
+        <span>Esclarecendo suas possíveis dúvidas</span>
+        <dl class="faq-list">
+          <dt><img src="assets/accordion-li.svg" alt="accordion list style">Quanto custa o desenvolvimento de cada projeto?</dt>
+          <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem libero sapiente ad quibusdam omnis.</dd>
+    
+          <dt><img src="assets/accordion-li.svg" alt="accordion list style">Quanto custa o desenvolvimento de cada projeto?</dt>
+          <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem libero sapiente ad quibusdam omnis.</dd>
+    
+          <dt><img src="assets/accordion-li.svg" alt="accordion list style">Quanto custa o desenvolvimento de cada projeto?</dt>
+          <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem libero sapiente ad quibusdam omnis.</dd>
+    
+          <dt><img src="assets/accordion-li.svg" alt="accordion list style">Quanto custa o desenvolvimento de cada projeto?</dt>
+          <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem libero sapiente ad quibusdam omnis.</dd>
+    
+          <dt><img src="assets/accordion-li.svg" alt="accordion list style">Quanto custa o desenvolvimento de cada projeto?</dt>
+          <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem libero sapiente ad quibusdam omnis.</dd>
+    
+    
+        </dl>
+      </div>
+    </section>
+    <section id="quote">
+      <img src="assets/quote.svg" alt="">
+      <blockquote>Não deixaremos de explorar e, ao término da nossa exploração deveremos chegar ao ponto de partida e conhecer esse lugar pela primeira vez.</blockquote>
+      <cite>T. S. Eliot</cite>
+    </section>
+    <footer>
+      <div class="flex">
+        <div class="logo">
+          <span>creativi_</span>
+        </div>
+        <div class="subflex">
+          <div class="nav-list">
+            <h5>Procurando algo?</h5>
             <ul>
-              <li>Desenvolvimento frontend</li>
-              <li>UI Design</li>
-              <li>Vue JS</li>
-              <li>JavaScript</li>
+              <li><a href="">sobre</a></li>
+              <li><a href="">serviços</a></li>
+              <li><a href="">cotnato</a></li>
+              <li><a href="">faq</a></li>
             </ul>
           </div>
+          <div class="contato-block">
+            <h5>Ou fale comigo!</h5>
+            <span>Entre em contato por:</span>
+            <span>email: contato@email.com</span>
+            <span>Celular: (48) 9 99861-8289</span>
+            <span>Telegram: creativi_digital</span>
+          </div>
+  
         </div>
       </div>
-
-    </div>
-  </section>
-
-  <section id="servicos">
-    <div class="flex">
-      <div>
-        <h2>DE QUAL MANEIRA VOCÊ QUER SER AJUDADO?</h2>
+      <div class="copy">
+        <span>creativi, 2022 - Todos os direitos reservados</span>
       </div>
-      <div class="column-2">
-        <h3>Entre código, interface e usuário...</h3>
-        <p>
-          Para o desenvolvimento de uma página web que esteja de acordo com as necessidades do cliente, é necessário manter um constante feedback com o desenvolvedor. É por essa questão que em meu processo de desenvolvimento divido em 5 etapas onde em cada uma busco constantemente a validação do cliente para um desenvolvimento eficiente e alinhado às expectativas.
-        </p>
-      </div>
-      <!-- imagens da logo das principais stacks vão aqui -->
-    </div>
-    
-  </section>
-
-  <section id="contato">
-    <div class="container">
-      <h2>Fale comigo!</h2>
-      <div class="flex">
-        <div class="contato-info">
-          <span>Entre em contato por:</span>
-          <span>email: contato@email.com</span>
-          <span>Celular: (48) 9 99861-8289</span>
-          <span>Telegram: creativi_digital</span>
-        </div>
-        <div>
-          <form action="">
-            <label for="numero">Número:</label>
-            <input type="text" name="numero">
-  
-            <label for="E-mail">E-mail:</label>
-            <input type="text" name="email">
-  
-            <label for="mensagem">Mensagem:</label>
-            <textarea name="mensagem"></textarea>
-            <input class="btn" type="submit" value="enviar">
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="faq">
-    <div class="container">
-      <h2>Dúvidas frequentes</h2>
-      <span>Esclarecendo suas possíveis dúvidas</span>
-      <dl class="faq-list">
-        <dt><img src="assets/accordion-li.svg" alt="accordion list style">Quanto custa o desenvolvimento de cada projeto?</dt>
-        <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem libero sapiente ad quibusdam omnis.</dd>
-  
-        <dt><img src="assets/accordion-li.svg" alt="accordion list style">Quanto custa o desenvolvimento de cada projeto?</dt>
-        <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem libero sapiente ad quibusdam omnis.</dd>
-  
-        <dt><img src="assets/accordion-li.svg" alt="accordion list style">Quanto custa o desenvolvimento de cada projeto?</dt>
-        <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem libero sapiente ad quibusdam omnis.</dd>
-  
-        <dt><img src="assets/accordion-li.svg" alt="accordion list style">Quanto custa o desenvolvimento de cada projeto?</dt>
-        <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem libero sapiente ad quibusdam omnis.</dd>
-  
-        <dt><img src="assets/accordion-li.svg" alt="accordion list style">Quanto custa o desenvolvimento de cada projeto?</dt>
-        <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem libero sapiente ad quibusdam omnis.</dd>
-  
-  
-      </dl>
-    </div>
-  </section>
-  <section id="quote">
-    <img src="assets/quote.svg" alt="">
-    <blockquote>Não deixaremos de explorar e, ao término da nossa exploração deveremos chegar ao ponto de partida e conhecer esse lugar pela primeira vez.</blockquote>
-    <cite>T. S. Eliot</cite>
-  </section>
-  <footer>
-    <div class="flex">
-      <div class="logo">
-        <span>creativi_</span>
-      </div>
-      <div class="subflex">
-        <div class="nav-list">
-          <h5>Procurando algo?</h5>
-          <ul>
-            <li><a href="">sobre</a></li>
-            <li><a href="">serviços</a></li>
-            <li><a href="">cotnato</a></li>
-            <li><a href="">faq</a></li>
-          </ul>
-        </div>
-        <div class="contato-block">
-          <h5>Ou fale comigo!</h5>
-          <span>Entre em contato por:</span>
-          <span>email: contato@email.com</span>
-          <span>Celular: (48) 9 99861-8289</span>
-          <span>Telegram: creativi_digital</span>
-        </div>
-
-      </div>
-    </div>
-    <div class="copy">
-      <span>creativi, 2022 - Todos os direitos reservados</span>
-    </div>
-  </footer>
+    </footer>
+  </main>
 
   <script type="module" src="scripts/main.js"></script>
 </body>
