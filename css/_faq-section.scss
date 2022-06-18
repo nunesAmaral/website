@@ -23,7 +23,11 @@
       }
     }
     dd {
+      font-size: 1.125rem;
+      line-height: 140%;
+      margin-top: 1rem;
       display: none;
+      max-width: 42rem;
       &.active {
         display: block;
       }
