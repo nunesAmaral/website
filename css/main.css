@@ -778,7 +778,14 @@ P {
   background-color: #c4c4c4;
   height: 17rem;
   width: 13.25rem;
+}
+
+#sobre div.flex .column-2 .img-block img {
+  max-width: 100%;
+  display: block;
   border-radius: 4px;
+  -webkit-box-shadow: 8px 8px 0 0 #27252c;
+          box-shadow: 8px 8px 0 0 #27252c;
 }
 
 #sobre div.flex h4 {

@@ -52,7 +52,12 @@
       background-color: #c4c4c4;
       height: 17rem;
       width: 13.25rem;
-      border-radius: 4px;
+      img {
+        max-width: 100%;
+        display: block;
+        border-radius: 4px;
+        box-shadow: 8px 8px 0 0 rgb(39, 37, 44);
+      }
     }
     h4 {
       margin-top: 2rem;
