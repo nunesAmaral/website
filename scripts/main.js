@@ -51,3 +51,29 @@ function smoothScroll() {
 }
 
 smoothScroll();
+
+// MAIS SCROLL
+const contatoBtn = document.querySelector('#contato-btn');
+
+contatoBtn.addEventListener('click', () => {
+  console.log(contatoBtn);
+  const section = document.querySelector('#contato');
+  const sectionTop = section.offsetTop;
+  window.scrollTo({
+    top: sectionTop,
+    behavior: 'smooth',
+  });
+});
+
+const contatoLink = document.querySelectorAll('span.link');
+console.log(contatoLink);
+contatoLink.forEach((link) => {
+  link.addEventListener('click', () => {
+    const section = document.querySelector('#contato');
+    const sectionTop = section.offsetTop;
+    window.scrollTo({
+      top: sectionTop,
+      behavior: 'smooth',
+    });
+  });
+});
